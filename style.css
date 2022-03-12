@@ -30,7 +30,7 @@ h1{
 }
 
 .nav-item{
-  margin-left:1px;
+  margin-left:-3px;
 }
 .nav-item .nav-link{
   margin-right:10px;
