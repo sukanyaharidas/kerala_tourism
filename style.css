@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 
-@media screen and (max-width: 1500px) {
 
 /* navbar common css */
 .navbar{
@@ -336,7 +335,16 @@ footer{
   color: #00acc1;
 }
 
-
+@media (min-width: 1200px) {
+#cards_landscape_wrap-2 .card-flyer .image-box img{
+  -webkit-transition:all .9s ease; 
+  -moz-transition:all .9s ease; 
+  -o-transition:all .9s ease;
+  -ms-transition:all .9s ease; 
+  width: 100%;
+  height: 200px;
+}
+}
 
 section{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
