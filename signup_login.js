@@ -12,14 +12,14 @@ function validatemail(){
     }
     else if(mail.value=="")
     {
-        error1.innerText="Email cannot be empty";
-        error1.style.color="red";
+        error1.innerText="Email cannot be empty!";
+        error1.style="color:red;font-size: 14px; font-family: Righteous', cursive;";
         mail.style="border-color:red";
         return false;
     }
     else{
-        error1.innerText="Sorry! Invalid Mail ID";
-        error1.style.color="red";
+        error1.innerText="Sorry! Invalid Mail ID!";
+        error1.style="color:red;font-size: 14px; font-family: Righteous', cursive;";
         mail.style="border-color:red";
         return false;
     }
@@ -32,7 +32,7 @@ function fnamecheck(){
     let fmsg=document.getElementById("fmsg");
     if(fname.value=="")
     {
-        fmsg.innerText="First Name cannot be empty";
+        fmsg.innerText="First Name cannot be empty!";
         fname.style="border-color:red";
         fmsg.style.color="red";
         return false;
@@ -51,7 +51,7 @@ function lnamecheck(){
     let lmsg=document.getElementById("lmsg");
     if(lname.value=="")
     {
-        lmsg.innerText="First Name cannot be empty";
+        lmsg.innerText="Last Name cannot be empty!";
         lname.style="border-color:red";
         lmsg.style.color="red";
         return false;
@@ -76,7 +76,7 @@ function loginpasscheck(){
  }
  else if (loginpass1.value=="")
  {
-    error5.innerText="Password cannot be empty";
+    error5.innerText="Password cannot be empty!";
     error5.style.color="red";
     loginpass1.style="border-color:red";
     return false;
@@ -84,7 +84,7 @@ function loginpasscheck(){
 
  else{
 
-    error5.innerText="Password is Invalid!!!";
+    error5.innerText="Password is Invalid!";
     error5.style.color="red";
     loginpass1.style="border-color:red";
      return false;
@@ -110,14 +110,14 @@ function validatephone(){
         }
         else if(inputtxt.value=="")
         {
-            error2.innerText="Phone number cannot be empty!!!";
+            error2.innerText="Phone number cannot be empty!";
             error2.style.color="red";
             inputtxt.style="border-color:red";
             return false;
         }
       else
         {
-            error2.innerText="Invalid Phone Number!!!";
+            error2.innerText="Invalid Phone Number!";
             error2.style.color="red";
             inputtxt.style="border-color:red";
         return false;
@@ -249,10 +249,8 @@ function checkStrength(password)
     {
         psw_str.classList.remove("progress-bar-warning");
         psw_str.classList.remove("progress-bar-danger");
-        psw_str.classList.add("progress-bar-success");
-        
+        psw_str.classList.add("progress-bar-success");      
         psw_str.style='width:100%';
-        
         flag=1;
         
     }
@@ -272,8 +270,8 @@ function validatepws()
     }
     else if(password.value=="")
     {
-        error3.style.color="red";
-        error3.innerText="Password cannot be empty!!!";
+        error3.style="color:red;font-size: 14px; font-family: Righteous', cursive;";
+        error3.innerText="Password cannot be empty!";
         password.style="border-color:red";
         return false;
     }
@@ -324,7 +322,7 @@ function cpass()
     }
     else if(cpassword.value==""){
             msg.style.color="red";
-            msg.innerText="Password cannot be empty!!!";
+            msg.innerText="Password cannot be empty!";
             cpassword.style="border-color:red";
             return false;
         }
